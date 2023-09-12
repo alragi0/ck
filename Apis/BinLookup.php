@@ -4,7 +4,7 @@ error_reporting(0);
 $bin = $_GET['lista'];
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://lookup.binlist.net/'.$bin = substr($bin, 0, 6));
+curl_setopt($ch, CURLOPT_URL, 'https://bins.su/'.$bin = substr($bin, 0, 6));
 curl_setopt($ch, CURLOPT_HEADER, 0);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
