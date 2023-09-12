@@ -416,7 +416,7 @@ date_default_timezone_set('America/Lima');
             $Bandera = $array_nuevo['Bandera'];
             $Currency = $array_nuevo['Currency'];
 
-            if ($Gateway == 'BIN Lookup' || $Archivo == 'BinLookup.php') {
+            if ($Gateway == 'BIN Lookup' || $Archivo == '/Apis/BinLookup.php') {
                 $message = "⚜️Bin Válido\n💳Bin: $Bin\n🧨Info: $Scheme - $Tipo - $Brand\n🏦Bank: $Banco\n🌐Country: $Pais $Bandera\n💸Currency: $Currency\n💣Checked By: @$username { $Rank }\n🤴Made by: @KingProOficial";
                 EnviarMensaje($chatId, $message, $message_id);
             } else {
