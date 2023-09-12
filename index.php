@@ -207,7 +207,7 @@ date_default_timezone_set('America/Lima');
 
     if (strpos($message, "!gen") === 0 || strpos($message, "/gen") === 0) {
         $Gateway = 'CC Generator'; #DEBES CAMBIAR ESTO SI USARAS OTRO COMANDO, PARA EL DE BIN DEJALO ASI.
-        $Archivo = 'CardGenerator.php'; #DEBES CAMBIAR ESTO POR EL NOMBRE DE TU NUEVO ARCHIVO SI ES QUE USARAS OTRO COMANDO.
+        $Archivo = '/Apis/CardGenerator.php'; #DEBES CAMBIAR ESTO POR EL NOMBRE DE TU NUEVO ARCHIVO SI ES QUE USARAS OTRO COMANDO.
         VerificarChatID($chatId); #ESTA FUNCION VERIFICA SI EL USUARIO O GRUPO ESTA AÑADIDO PARA USAR EL BOT.
         $Card = GetCard($message); #ESTA FUNCION SIRVE PARA AGARRAR LA TARJETA FUERA DEL COMANDO.
         ConsultaAPI($Archivo, $Card); #ESTA FUNCION CONSULTA A LA API DEPENDIENDO EL NOMBRE DEL ARCHIVO, EN ESTE CASO "BinLookup.php".
