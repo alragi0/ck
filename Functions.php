@@ -391,7 +391,7 @@ date_default_timezone_set('America/Lima');
     {
         global $chatId, $username, $userId, $message_id, $Archivo, $Rank;
 
-        if ($Gateway == 'CC Generator' || $Archivo == 'CardGenerator.php') {
+        if ($Gateway == 'CC Generator' || $Archivo == '/Apis/CardGenerator.php') {
             $Resultado = str_replace("-", "\n", $Resultado);
             $Resultado = "✅ NAMSO GENERATOR:\n".$Resultado;
             EnviarMensaje($chatId, $Resultado, $message_id);
